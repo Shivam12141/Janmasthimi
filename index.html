@@ -58,7 +58,10 @@
     .map:hover { transform:translateY(-2px); }
     footer { text-align:center; padding:14px 20px 50px; color:#fae0a3; }
     footer p { margin:7px; line-height:1.65; }
-    .contacts { font-size:18px; color:white; }
+    .contact-title { color:var(--gold); font-size:23px; font-weight:800; margin:15px 0 8px; }
+    .contacts { font-size:18px; color:white; display:grid; gap:9px; justify-content:center; }
+    .contacts a { color:#fff7df; text-decoration:none; border:1px solid rgba(247,207,116,.42); border-radius:999px; padding:9px 17px; transition:transform .2s ease, background .2s ease; }
+    .contacts a:hover, .contacts a:focus { transform:translateY(-2px); background:rgba(247,207,116,.16); }
     @media(max-width:700px) { body { font-size:16px; } .hero { padding:54px 16px 35px; } .hero:before { inset:8px; border-radius:20px; } .greeting { margin-top:7px; } .intro { line-height:1.75; } .flute { margin:24px auto 18px; } .section { width:min(94vw,540px); padding:39px 0; } .details { grid-template-columns:1fr; } .detail { padding:20px 15px; border-right:0; border-bottom:1px solid rgba(247,207,116,.25); } .detail:last-child { border-bottom:0; } .invite { grid-template-columns:1fr; } .invite-copy { padding:30px 21px 34px; } .invite-copy p { font-size:17px; line-height:1.85; } .invite-art { min-height:465px; order:-1; background-position:center 42%; } .art-note { font-size:16px; left:12px; right:12px; bottom:12px; } .countdown { gap:6px; padding:8px; } .time { padding:15px 2px; border-radius:12px; } .time small { font-size:12px; } .address { padding:29px 16px; } .address p { font-size:17px; } .map { width:100%; justify-content:center; padding:14px 12px; font-size:15px; } footer { padding:10px 16px 35px; } }
   </style>
 </head>
@@ -108,7 +111,12 @@
   <footer>
     <div class="top-ornament">❦</div>
     <p>कृपया सपरिवार पधारकर श्रीकृष्ण का आशीर्वाद प्राप्त करें।</p>
-    <p class="contacts"><strong>धीरेंद्र मुंशीलाल शाह</strong> — 9819010696<br><strong>शिवम धीरेंद्र शाह</strong> — 9324206928</p>
+    <div class="contact-title">संपर्क विवरण</div>
+    <div class="contacts">
+      <a href="tel:+919819010696"><strong>धीरेंद्र मुंशीलाल शाह</strong> — 9819010696</a>
+      <a href="tel:+919324206928"><strong>शिवम धीरेंद्र साह</strong> — 9324206928</a>
+      <a href="tel:+918655778737"><strong>पुष्कर धीरेंद्र साह</strong> — 8655778737</a>
+    </div>
     <p>राधे राधे • जय श्री कृष्ण</p>
   </footer>
   <script>
